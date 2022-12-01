@@ -22,9 +22,9 @@ public class PascalTrianglePractice {
             for(int j = 0 ; j < i+1 ; j++)
             {
                 int num = 1;
-                if(i >= 2)
+                if(i >= 2) //logic for third index
                 {
-                   if(j >= 1 && j < i)
+                   if(j >= 1 && j < i) //logic to prevent calculation for first and last j indexes
                    {
                        num = temp.get(i-1).get(j-1) + temp.get(i-1).get(j);
                        System.out.print(num);
@@ -36,7 +36,8 @@ public class PascalTrianglePractice {
                        tempReset.add(num);
                    }
                 }
-
+		
+		//logic for first & second index
                 else {
                     System.out.print(num);
                     tempReset.add(num);
