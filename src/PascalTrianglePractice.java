@@ -4,7 +4,7 @@ import java.util.List;
 public class PascalTrianglePractice {
 
 	public static void main(String[] args) {
-		int n = 7;
+	int n = 7;
         List<List<Integer>> temp = new ArrayList<>();
 
 
@@ -26,8 +26,6 @@ public class PascalTrianglePractice {
                 {
                    if(j >= 1 && j < i)
                    {
-                       //i = 3 -baris ke 4
-                       //ngambil baris sebelumnya
                        num = temp.get(i-1).get(j-1) + temp.get(i-1).get(j);
                        System.out.print(num);
                        tempReset.add(num);
