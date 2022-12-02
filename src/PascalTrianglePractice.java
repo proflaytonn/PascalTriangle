@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalTrianglePractice {
-
+	//LeetCode case : https://leetcode.com/problems/pascals-triangle/
 	public static void main(String[] args) {
 	int n = 7;
         List<List<Integer>> temp = new ArrayList<>();
